@@ -32,6 +32,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 1%;
 }
 
 .logo{
@@ -108,13 +109,14 @@ nav {
     position: relative;
     margin-top: -5%;
     background-color: #fff;
-    padding: 3% 0;
+    padding: 3% 10% 3% 0%;
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15)
 
 }
 
 .partner {
     padding: 0 4%;
+    width: 20%;
 }
 
 /* ARTICLE */
@@ -481,7 +483,7 @@ nav {
 
 .footer-outer{
     padding-top: 8%;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
     background-color: #4f553d;
     margin-top: -10%;
     position: relative;
@@ -529,4 +531,191 @@ nav {
     display: block;
     height: 2px;
     background-color: #5d6544;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
+
+.footer-links-outer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link  .link-head{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    display: block;
+}
+
+.footer-link .all-links {
+    color: #b6c197;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    display: block;
+}
+
+.footer-link  .link-email{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 40px;
+    display: block;
+}
+
+.icon-button-outer {
+    display: flex;
+    margin-top: 5%;
+}
+.icon-button-outer .icon-button {
+    width: 40px;
+    height: 40px;
+    background-color: #444a34;
+    border-radius: 50%;
+    margin-right: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #5e6648;
+    font-size: 22px;
+    border: none;
+}
+
+.icon-button:hover {
+    background-color: #ffd723;
+    color: #ffffff;
+}
+
+.footer-logo-outer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-top: -2%;
+}
+
+.footer-logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer-logo h1{
+    color: #fff;
+    margin: 0 10px 5px 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.copyright-text{
+    color: #b6c197;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    display: block;
+}
+
+
+/* Styles for small screens (up to 576px) */
+@media (max-width: 576px) {
+    /* CSS rules for small screens */
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+    .home-text{
+        width: 80%;
+    }
+    .partners {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .partner {
+        width: 50%;
+    }
+    .article {
+        flex-direction: column;
+    }
+
+    .article-with-img {
+        flex-direction: column;
+    }
+    .article-text {
+        width: 100%;
+    }
+    .text-inner .text-heading {
+        font-size: 32px !important;
+    }
+
+    .article-card-outer-left{
+        width: 90%;
+        position: relative;
+    }
+
+    .article-card-outer-right{
+        width: 90%;
+        position: relative;
+    }
+
+    .sercices-card-outer {
+        flex-direction: column;
+    }
+
+    .footer-links-outer{
+        flex-direction: column;
+    }
+    .footer-logo-outer{
+        flex-direction: column;
+    }
+
+    .footer-card {
+        width: 100%;
+    }
+    .footer-card-text {
+        font-size: 2rem !important;
+    }
+  }
+  
+  /* Styles for medium screens (between 577px and 991px) */
+  @media (min-width: 577px) and (max-width: 991px) {
+    /* CSS rules for medium screens */
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+    .article {
+        flex-direction: column;
+    }
+    .article-text {
+        width: 100%;
+    }
+
+    .article-with-img {
+        flex-direction: column;
+    }
+    .sercices-card-outer {
+        flex-direction: column;
+    }
+    .footer-contact-details {
+        flex-direction: column;
+    }
+
+    .footer-logo-outer{
+        flex-direction: column;
+    }
+  }
+  
+  /* Styles for large screens (between 992px and 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS rules for large screens */
+    .footer-links-outer{
+        flex-direction: column;
+    }
+  }
+  
+  /* Styles for extra large screens (1200px and above) */
+  @media (min-width: 1200px) {
+    /* CSS rules for extra large screens */
+  }
+  
