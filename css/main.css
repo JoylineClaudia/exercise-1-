@@ -71,7 +71,7 @@ nav {
 }
 
 .home {
-    background: url(/../images/bg.png);
+    background: url(../images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
